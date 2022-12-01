@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+a{
+    text-decoration: none;
+}
+.navlink{
+    font-family: 'Tangerine', serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: gray;
+    
+}
+.navlink:hover{
+    cursor: pointer;
+    color: gold;
+    text-shadow: 6px 6px 6px #aaa;
+}

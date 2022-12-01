@@ -1,0 +1,36 @@
+.cardproduct:hover {
+  box-shadow: 0 8px 25px 0 rgba(0,0,0,0.2);
+  
+}
+.cardproduct{
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+  
+}
+.cardbtn{
+  background-color: rgb(185, 164, 164);
+  margin-left: 25%;
+}
+.btn:hover{
+  color: gold;
+  background-color: black
+}
+.card-img-top{
+  max-height: 200px;
+}
+
+.card{
+  border-radius: 25px;
+}
+.card-body{
+  background-color: whitesmoke;
+}
+.card-img-top{
+  border-radius: 15px;
+}
+.size-choose{
+  max-width: fit-content;
+  max-height: 43px;
+  margin-left: 12px;
+  background-color: antiquewhite;
+
+}

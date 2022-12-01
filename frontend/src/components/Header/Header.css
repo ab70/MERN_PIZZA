@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+a{
+    text-decoration: none !important;
+}
+body{
+    overflow-x: hidden;
+    margin: 2px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+    float: left;
+ }
+.navlink{
+    font-family: 'Tangerine', serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none !important;
+    color: gray !important;
+    
+}
+.navlink:hover{
+    cursor: pointer;
+    color: gold !important;
+    text-shadow: 6px 6px 6px #aaa;
+}
+.navDropdown{
+    font-size: 26px;
+    color: gainsboro !important;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    
+}
+.navDropdownContent{
+    display: none;
+    
+    position: absolute;
+    list-style: none;
+    float: right;
+    min-width: 160px;
+    background-color: black;
+    color: gray !important;
+    z-index: 1;
+    border-radius: 5%;
+    
+
+}
+.navbar-brand{
+    margin-left: 29px;
+}
+
+.navbar-nav{
+    margin-right: 29px;
+}
