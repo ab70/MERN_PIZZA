@@ -17,6 +17,6 @@ export const signInUser = async (data)=>{
         return await axios.post(`${URL}/user/login`,data)
     }
     catch(err){
-        console.log('error');
+        console.log(err);
     }
 }

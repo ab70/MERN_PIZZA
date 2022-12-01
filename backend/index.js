@@ -7,6 +7,7 @@ const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser')
 dotenv.config({path: 'backend/.env'})
 const MongoDbStore = require('connect-mongo')
+var bodyParser = require('body-parser')
 const session = require('express-session')
 const flash = require('express-flash')
 
@@ -36,6 +37,7 @@ app.use(flash())
 //app middlewares
 app.use(cors())   //used to handle cross-site request on 2 locals
 app.use(express.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(cookieParser());

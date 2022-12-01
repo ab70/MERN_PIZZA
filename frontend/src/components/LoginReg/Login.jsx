@@ -68,6 +68,13 @@ export default function Login() {
 
     const postSignIn = async ()=>{
       let resSigninData = await signInUser(signIn) 
+      console.log(resSigninData);
+      // if(res.status===200){
+      //   window.alert("login Successful")
+      // }
+      // else{
+      //   window.alert("login Failed")
+      // }
     }
     
   return (
@@ -190,7 +197,7 @@ export default function Login() {
                           <input
                             type="text"
                             name='userAddress'
-                            id="form3Example4c"
+                            id=""
                             class="form-control"
                             onChange={(e)=>onInputChange(e)}
                           />
