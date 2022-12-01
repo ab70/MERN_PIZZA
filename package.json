@@ -1,0 +1,26 @@
+{
+  "name": "reactmui_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4",
+    "nodemon": "^2.0.20"
+  }
+}
