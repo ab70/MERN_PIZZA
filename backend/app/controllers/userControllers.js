@@ -70,6 +70,7 @@ function userControllers(){
                        const token = jwt.sign({id: user._id, role: user.isAdmin}, process.env.jsonSec);
                        console.log(token); 
                        const  { password, ...others } = user._doc;
+                       req.session.currentUser= others
                        res.cookie('jwt_token', token ,{ expires: new Date((new Date()).getTime() + (10 * 86400000)), httpOnly: true } )
                        res.status(200).json({message:"User logedin",userDetails: others});
                        

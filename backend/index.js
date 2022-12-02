@@ -29,7 +29,7 @@ app.use(session({
         mongoUrl: process.env.Mongoose_connect
     }),
     saveUninitialized: false,
-    cookie: {maxAge: 1000*60*60*6}
+    cookie: {maxAge: 50000}
 
 }))
 app.use(flash())
@@ -42,7 +42,10 @@ app.use(cors({
 app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use((req,res,next)=>{
+    res.locals.session = req.session
+    next()
+})
 app.use(cookieParser());
 
 //required api.js file and passed app to there
