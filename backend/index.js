@@ -35,7 +35,10 @@ app.use(session({
 app.use(flash())
 
 //app middlewares
-app.use(cors())   //used to handle cross-site request on 2 locals
+app.use(cors({
+    origin: 'http://localhost:3000',
+    credentials: true
+}))   //used to handle cross-site request on 2 locals
 app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());

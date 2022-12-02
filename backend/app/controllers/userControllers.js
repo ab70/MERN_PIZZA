@@ -70,7 +70,7 @@ function userControllers(){
                        const token = jwt.sign({id: user._id, role: user.isAdmin}, process.env.jsonSec);
                        console.log(token); 
                        const  { password, ...others } = user._doc;
-                       res.cookie('jwt_token', token ,{ expires: new Date(Date.now()+3600*1000), httpOnly: true } )
+                       res.cookie('jwt_token', token ,{ expires: new Date((new Date()).getTime() + (10 * 86400000)), httpOnly: true } )
                        res.status(200).json({message:"User logedin",userDetails: others});
                        
                       //This is used to seperate password from the response or json
